@@ -23,6 +23,7 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+    box-shadow: 0px 4px 4px #333333c4;
 }
 
 nav {
@@ -49,6 +50,7 @@ nav a {
 
 nav a:hover {
     color: #ff0000;
+    font-size: 18px;
 }
 
 .logo img {
@@ -73,6 +75,9 @@ nav a:hover {
 .content {
     padding: 40px 100px;
 }
+.content h2{
+    padding: 20px;
+}
 /* Estilos da seção de notícias */
 .noticias-container {
     display: flex;
@@ -88,17 +93,21 @@ nav a:hover {
     border: 1px solid #ccc;
     background-color: #fff;
     transition: transform 0.2s;
+    box-shadow: 4px 4px 4px #33333333;
 }
 
 .noticia:hover {
     transform: scale(1.02);
+    box-shadow: 4px 4px 4px #4a00aa71;
 }
 
 .noticia img {
     max-width: 100%;
     height: auto;
 }
-
+.noticias h2 {
+    padding: 20px;
+}
 .noticia h3 {
     margin: 10px 0;
 }
