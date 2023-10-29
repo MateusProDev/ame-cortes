@@ -70,7 +70,46 @@ nav a:hover {
     max-width: 100%;
     height: auto;
 }
+/*secao produtos*/
+#produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 
+.produto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 4px 4px 4px #33333333;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a00aa;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
 /* Estilos dos vídeos e notícias */
 .content {
     padding: 40px 100px;
@@ -167,4 +206,18 @@ footer :hover{
     .content {
         padding: 20px 0;
     }
+}
+
+/*animação */
+/* Classe para animação */
+.animate-slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Classe para ativar a animação quando estiver visível */
+.animate-slide-in.active {
+    opacity: 1;
+    transform: translateY(0);
 }
